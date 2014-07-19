@@ -8,13 +8,90 @@
 </head>
 
 <body>
-    <h2>dialogBox</h2>
-    <p />
-    <button id="alertButton">Alert</button>
-    <button id="promptButton">Prompt</button>
-    <button id="checkboxesButton">Checkbox</button>
-    <button id="infoButton">Info</button>
-    <button id="choicesButton">Choices</button>
+    <h1>dialogBox</h2>
+    <p>dialogBox is a standalone, vanilla javascript library for building and extending the functionality of your application.<p/>
+
+    <hr />
+
+    <h2>Features</h2>
+    <ul>
+        <li>Alert</li>
+        <li>Prompt</li>
+        <li>Checkbox</li>
+        <li>Info</li>
+        <li>Choices</li>
+    </ul>
+
+    <hr />
+
+    <h2>Examples</h2>
+        <div class="featureContainer">
+            <h4>Alert</h4>
+            <table class="codetable">
+                <tr>
+                    <td>
+                        <pre>dialogBox.alert(<span class="doubleQuotesText">"Warning"</span>, <span class="doubleQuotesText">"Connection lost"</span>);</span></pre>
+                    </td>
+                </tr>
+            </table>
+            <button class="featureButton" id="alertButton">try me</button>
+        </div>
+
+
+        <div class="featureContainer">
+            <h4>Prompt</h4>
+            <table class="codetable">
+                <tr>
+                    <td>
+                        <pre>dialogBox.prompt(<span class="doubleQuotesText">"You win !!"</span>, <span class="doubleQuotesText">"Please enter your name"</span>, <span class="doubleQuotesText">"name"</span>, function (value) {
+            console.log(value);
+        });</pre>
+                    </td>
+                </tr>
+            </table>  
+            <button class="featureButton" id="promptButton">try me</button>
+        </div>
+
+        <div class="featureContainer">
+            <h4>Checkbox</h4>
+            <table class="codetable">
+                <tr>
+                    <td>
+                        <pre>dialogBox.alert(<span class="doubleQuotesText">"Warning"</span>, <span class="doubleQuotesText">"Connection lost"</span>);</pre>
+                    </td>
+                </tr>
+            </table>
+            <button class="featureButton" id="checkboxesButton">try me</button>
+        </div>
+        
+        <div class="featureContainer">
+            <h4>Info</h4>
+            <table class="codetable">
+                <tr>
+                    <td>
+                        <pre>dialogBox.info(<span class="doubleQuotesText">"Modifications enregistrees"</span>, <span class="doubleQuotesText">"orange"</span>);</pre>
+                    </td>
+                </tr>
+            </table>
+            <button class="featureButton" id="infoButton">try me</button>
+        </div>
+
+    <div class="featureContainer">
+        <h4>Choices</h4>
+        <table class="codetable">
+            <tr>
+                <td>
+                    <pre>dialogBox.choices(<span class="doubleQuotesText">"You win !!!"</span>, <span class="doubleQuotesText">"Congratulations !"</span>,
+        [{label:<span class="doubleQuotesText">"New game"</span>, value:<span class="doubleQuotesText">"new"</span>}, {label:<span class="doubleQuotesText">"Home"</span>, value:<span class="doubleQuotesText">"home"</span>}, {label:<span class="doubleQuotesText">"Cancel"</span>, value:<span class="doubleQuotesText">"cancel"</span>}],
+        function (value) {
+            console.log(value);
+    });</pre>
+                </td>
+            </tr>
+        </table>
+        <button class="featureButton" id="choicesButton">try me</button>
+    </div>
+
 
     <script src="dialogBox.js"></script>
     <script src="main.js"></script>
