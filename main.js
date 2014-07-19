@@ -7,7 +7,7 @@
     document.getElementById("checkboxesButton").addEventListener("click", function () {
         var itemsToShow = [];
         var a;
-        for (var i = 0; i < 40 ;  i++) {
+        for (var i = 0; i < 20 ;  i++) {
             a = (i % 2 === 0);
             itemsToShow.push({
                 value: "value" + i,

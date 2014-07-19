@@ -76,7 +76,7 @@ var CheckBox = function (title, checkboxes, callback) {
 
     var element = elements.generic("div", null, null, "dialogBox");
 
-    var header = elements.generic("header", "titre", "modal-header", null);
+    var header = elements.generic("header", title, "modal-header", null);
     element.appendChild(header);
 
     this.body = elements.generic("div", null, "modal-body", null);
