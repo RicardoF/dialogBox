@@ -9,9 +9,9 @@
 
 <body>
     <h1>dialogBox</h2>
-    <p>dialogBox is a standalone, vanilla javascript library for building and extending the functionality of your application.<p/>
+    <p>dialogBox is a <span class="boldText">standalone</span>, <span class="boldText">vanilla javascript library</span> for building and extending the functionality of your application.<p/>
 
-    <hr />
+    <table class="horizontalSpliter"></table>
 
     <h2>Features</h2>
     <ul>
@@ -22,7 +22,7 @@
         <li>Choices</li>
     </ul>
 
-    <hr />
+    <table class="horizontalSpliter"></table>
 
     <h2>Examples</h2>
         <div class="featureContainer">
@@ -43,9 +43,9 @@
             <table class="codetable">
                 <tr>
                     <td>
-                        <pre>dialogBox.prompt(<span class="doubleQuotesText">"You win !!"</span>, <span class="doubleQuotesText">"Please enter your name"</span>, <span class="doubleQuotesText">"name"</span>, function (value) {
-            console.log(value);
-        });</pre>
+<pre>dialogBox.prompt(<span class="doubleQuotesText">"You win !!"</span>, <span class="doubleQuotesText">"Please enter your name"</span>, <span class="doubleQuotesText">"name"</span>, <span class="boldText">function</span> (value) {
+    <span class="commentText">// Do whatever you want with the result.</span>
+});</pre>
                     </td>
                 </tr>
             </table>  
@@ -57,7 +57,32 @@
             <table class="codetable">
                 <tr>
                     <td>
-                        <pre>dialogBox.alert(<span class="doubleQuotesText">"Warning"</span>, <span class="doubleQuotesText">"Connection lost"</span>);</pre>
+<pre><span class="boldText">var</span> itemsToShow = [
+    {<span class="doubleQuotesText">'label'</span>:<span class="doubleQuotesText">'label0'</span>,<span class="doubleQuotesText">'value'</span>:<span class="doubleQuotesText">'value0'</span>,<span class="doubleQuotesText">'checked'</span>:<span class="boldText">true</span>},
+    {<span class="doubleQuotesText">'label'</span>:<span class="doubleQuotesText">'label1'</span>,<span class="doubleQuotesText">'value'</span>:<span class="doubleQuotesText">'value1'</span>,<span class="doubleQuotesText">'checked'</span>:<span class="boldText">false</span>},
+    {<span class="doubleQuotesText">'label'</span>:<span class="doubleQuotesText">'label2'</span>,<span class="doubleQuotesText">'value'</span>:<span class="doubleQuotesText">'value2'</span>,<span class="doubleQuotesText">'checked'</span>:<span class="boldText">true</span>},
+    {<span class="doubleQuotesText">'label'</span>:<span class="doubleQuotesText">'label3'</span>,<span class="doubleQuotesText">'value'</span>:<span class="doubleQuotesText">'value3'</span>,<span class="doubleQuotesText">'checked'</span>:<span class="boldText">false</span>},
+    {<span class="doubleQuotesText">'label'</span>:<span class="doubleQuotesText">'label4'</span>,<span class="doubleQuotesText">'value'</span>:<span class="doubleQuotesText">'value4'</span>,<span class="doubleQuotesText">'checked'</span>:<span class="boldText">true</span>},
+    {<span class="doubleQuotesText">'label'</span>:<span class="doubleQuotesText">'label5'</span>,<span class="doubleQuotesText">'value'</span>:<span class="doubleQuotesText">'value5'</span>,<span class="doubleQuotesText">'checked'</span>:<span class="boldText">false</span>},
+    {<span class="doubleQuotesText">'label'</span>:<span class="doubleQuotesText">'label6'</span>,<span class="doubleQuotesText">'value'</span>:<span class="doubleQuotesText">'value6'</span>,<span class="doubleQuotesText">'checked'</span>:<span class="boldText">true</span>},
+    {<span class="doubleQuotesText">'label'</span>:<span class="doubleQuotesText">'label7'</span>,<span class="doubleQuotesText">'value'</span>:<span class="doubleQuotesText">'value7'</span>,<span class="doubleQuotesText">'checked'</span>:<span class="boldText">false</span>},
+    {<span class="doubleQuotesText">'label'</span>:<span class="doubleQuotesText">'label8'</span>,<span class="doubleQuotesText">'value'</span>:<span class="doubleQuotesText">'value8'</span>,<span class="doubleQuotesText">'checked'</span>:<span class="boldText">true</span>},
+    {<span class="doubleQuotesText">'label'</span>:<span class="doubleQuotesText">'label9'</span>,<span class="doubleQuotesText">'value'</span>:<span class="doubleQuotesText">'value9'</span>,<span class="doubleQuotesText">'checked'</span>:<span class="boldText">false</span>},
+    {<span class="doubleQuotesText">'label'</span>:<span class="doubleQuotesText">'label10'</span>,<span class="doubleQuotesText">'value'</span>:<span class="doubleQuotesText">'value10'</span>,<span class="doubleQuotesText">'checked'</span>:<span class="boldText">true</span>},
+    {<span class="doubleQuotesText">'label'</span>:<span class="doubleQuotesText">'label11'</span>,<span class="doubleQuotesText">'value'</span>:<span class="doubleQuotesText">'value11'</span>,<span class="doubleQuotesText">'checked'</span>:<span class="boldText">false</span>},
+    {<span class="doubleQuotesText">'label'</span>:<span class="doubleQuotesText">'label12'</span>,<span class="doubleQuotesText">'value'</span>:<span class="doubleQuotesText">'value12'</span>,<span class="doubleQuotesText">'checked'</span>:<span class="boldText">true</span>},
+    {<span class="doubleQuotesText">'label'</span>:<span class="doubleQuotesText">'label13'</span>,<span class="doubleQuotesText">'value'</span>:<span class="doubleQuotesText">'value13'</span>,<span class="doubleQuotesText">'checked'</span>:<span class="boldText">false</span>},
+    {<span class="doubleQuotesText">'label'</span>:<span class="doubleQuotesText">'label14'</span>,<span class="doubleQuotesText">'value'</span>:<span class="doubleQuotesText">'value14'</span>,<span class="doubleQuotesText">'checked'</span>:<span class="boldText">true</span>},
+    {<span class="doubleQuotesText">'label'</span>:<span class="doubleQuotesText">'label15'</span>,<span class="doubleQuotesText">'value'</span>:<span class="doubleQuotesText">'value15'</span>,<span class="doubleQuotesText">'checked'</span>:<span class="boldText">false</span>},
+    {<span class="doubleQuotesText">'label'</span>:<span class="doubleQuotesText">'label16'</span>,<span class="doubleQuotesText">'value'</span>:<span class="doubleQuotesText">'value16'</span>,<span class="doubleQuotesText">'checked'</span>:<span class="boldText">true</span>},
+    {<span class="doubleQuotesText">'label'</span>:<span class="doubleQuotesText">'label17'</span>,<span class="doubleQuotesText">'value'</span>:<span class="doubleQuotesText">'value17'</span>,<span class="doubleQuotesText">'checked'</span>:<span class="boldText">false</span>},
+    {<span class="doubleQuotesText">'label'</span>:<span class="doubleQuotesText">'label18'</span>,<span class="doubleQuotesText">'value'</span>:<span class="doubleQuotesText">'value18'</span>,<span class="doubleQuotesText">'checked'</span>:<span class="boldText">true</span>},
+    {<span class="doubleQuotesText">'label'</span>:<span class="doubleQuotesText">'label19'</span>,<span class="doubleQuotesText">'value'</span>:<span class="doubleQuotesText">'value19'</span>,<span class="doubleQuotesText">'checked'</span>:<span class="boldText">false</span>}
+];
+
+dialogBox.checkbox(<span class="doubleQuotesText">"Select title"</span>, itemsToShow, <span class="boldText">function</span>(selectedItems) {
+    <span class="commentText">// Do whatever you want with the result.</span>
+});</pre>
                     </td>
                 </tr>
             </table>
@@ -69,28 +94,28 @@
             <table class="codetable">
                 <tr>
                     <td>
-                        <pre>dialogBox.info(<span class="doubleQuotesText">"Modifications enregistrees"</span>, <span class="doubleQuotesText">"orange"</span>);</pre>
+<pre>dialogBox.info(<span class="doubleQuotesText">"Modifications enregistrees"</span>, <span class="doubleQuotesText">"orange"</span>);</pre>
                     </td>
                 </tr>
             </table>
             <button class="featureButton" id="infoButton">try me</button>
         </div>
 
-    <div class="featureContainer">
-        <h4>Choices</h4>
-        <table class="codetable">
-            <tr>
-                <td>
-                    <pre>dialogBox.choices(<span class="doubleQuotesText">"You win !!!"</span>, <span class="doubleQuotesText">"Congratulations !"</span>,
-        [{label:<span class="doubleQuotesText">"New game"</span>, value:<span class="doubleQuotesText">"new"</span>}, {label:<span class="doubleQuotesText">"Home"</span>, value:<span class="doubleQuotesText">"home"</span>}, {label:<span class="doubleQuotesText">"Cancel"</span>, value:<span class="doubleQuotesText">"cancel"</span>}],
-        function (value) {
-            console.log(value);
-    });</pre>
-                </td>
-            </tr>
-        </table>
-        <button class="featureButton" id="choicesButton">try me</button>
-    </div>
+        <div class="featureContainer">
+            <h4>Choices</h4>
+            <table class="codetable">
+                <tr>
+                    <td>
+<pre>dialogBox.choices(<span class="doubleQuotesText">"You win !!!"</span>, <span class="doubleQuotesText">"Congratulations !"</span>,
+    [{label:<span class="doubleQuotesText">"New game"</span>, value:<span class="doubleQuotesText">"new"</span>}, {label:<span class="doubleQuotesText">"Home"</span>, value:<span class="doubleQuotesText">"home"</span>}, {label:<span class="doubleQuotesText">"Cancel"</span>, value:<span class="doubleQuotesText">"cancel"</span>}],
+    <span class="boldText">function</span> (value) {
+        <span class="commentText">// Do whatever you want with the result.</span>
+});</pre>
+                    </td>
+                </tr>
+            </table>
+            <button class="featureButton" id="choicesButton">try me</button>
+        </div>
 
 
     <script src="dialogBox.js"></script>
