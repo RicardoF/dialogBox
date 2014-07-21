@@ -25,7 +25,7 @@ dialogBox.alert("Warning", "Connection lost");
 
 ```javascript
 dialogBox.prompt("You win !!", "Please enter your name", "name", function (value) {
-  console.log(value);
+  // Do whatever you want with the result.
 });
 ```
 ![alt text](https://github.com/RicardoF/dialogBox/blob/master/img/prompt.JPG "Prompt")
@@ -65,7 +65,7 @@ dialogBox.info("Modifications enregistrees", "orange");
 dialogBox.choices("You win !!!", "Congratulations !",
   [{label:"New game", value:"new"}, {label:"Home", value:"home"}, {label:"Cancel", value:"cancel"}],
   function (value) {
-    console.log(value);
+    // Do whatever you want with the result.
 });
 ```
 ![alt text](https://github.com/RicardoF/dialogBox/blob/master/img/choices.JPG "Choices")
