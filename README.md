@@ -34,16 +34,22 @@ dialogBox.prompt("You win !!", "Please enter your name", "name", function (value
 
 ```javascript
 var itemsToShow = [
-    {'label':'label0','value':'value0','checked':false},
-    {'label':'label1','value':'value1','checked':true},
-    {'label':'label2','value':'value2','checked':false},
-    {'label':'label3','value':'value3','checked':true},
-    {'label':'label4','value':'value4','checked':false},
-    {'label':'label5','value':'value5','checked':true},
-    {'label':'label6','value':'value6','checked':false},
-    {'label':'label7','value':'value7','checked':true},
-    {'label':'label8','value':'value8','checked':false},
-    {'label':'label9','value':'value9','checked':true}
+    {'label':'label0','value':'value0','checked':true},
+    {'label':'label1','value':'value1','checked':false},
+    {'label':'label2','value':'value2','checked':true},
+    {'label':'label3','value':'value3','checked':false},
+    {'label':'label4','value':'value4','checked':true},
+    {'label':'label5','value':'value5','checked':false},
+    {'label':'label6','value':'value6','checked':true},
+    {'label':'label7','value':'value7','checked':false},
+    {'label':'label8','value':'value8','checked':true},
+    {'label':'label9','value':'value9','checked':false},
+    {'label':'label10','value':'value6','checked':true},
+    {'label':'label10','value':'value6','checked':true},
+    {'label':'label10','value':'value6','checked':true},
+    {'label':'label10','value':'value6','checked':true},
+    {'label':'label10','value':'value6','checked':true},
+    {'label':'label10','value':'value6','checked':true},
 ];
 
 dialogBox.checkbox("Select title", itemsToShow, function(selectedItems) {
