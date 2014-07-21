@@ -44,12 +44,16 @@ var itemsToShow = [
     {'label':'label7','value':'value7','checked':false},
     {'label':'label8','value':'value8','checked':true},
     {'label':'label9','value':'value9','checked':false},
-    {'label':'label10','value':'value6','checked':true},
-    {'label':'label10','value':'value6','checked':true},
-    {'label':'label10','value':'value6','checked':true},
-    {'label':'label10','value':'value6','checked':true},
-    {'label':'label10','value':'value6','checked':true},
-    {'label':'label10','value':'value6','checked':true},
+    {'label':'label10','value':'value10','checked':true},
+    {'label':'label11','value':'value11','checked':false},
+    {'label':'label12','value':'value12','checked':true},
+    {'label':'label13','value':'value13','checked':false},
+    {'label':'label14','value':'value14','checked':true},
+    {'label':'label15','value':'value15','checked':false},
+    {'label':'label16','value':'value16','checked':true},
+    {'label':'label17','value':'value17','checked':false},
+    {'label':'label18','value':'value18','checked':true},
+    {'label':'label19','value':'value19','checked':false}
 ];
 
 dialogBox.checkbox("Select title", itemsToShow, function(selectedItems) {
