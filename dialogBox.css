@@ -7,6 +7,12 @@ body > p {
     padding-left: 1rem;
 }
 
+body > h1,
+body > h2 {
+    font-family: sans-serif;
+    color: rgba(48,48,48,1);
+}
+
 #shadow, #dialogBox{
     position: fixed;
     top: 0;
